@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемотека | Лучшие приколы</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .meme-card:hover { transform: translateY(-5px); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-zinc-900 text-white font-sans">
+
+    <header class="p-6 border-b border-zinc-800 flex justify-between items-center sticky top-0 bg-zinc-900/90 backdrop-blur-md z-10">
+        <h1 class="text-3xl font-black tracking-tighter italic text-yellow-400">MEME HUB</h1>
+        <nav class="space-x-6 hidden md:block">
+            <a href="#" class="hover:text-yellow-400 transition">Свежее</a>
+            <a href="#" class="hover:text-yellow-400 transition">Тренды</a>
+            <a href="#" class="hover:text-yellow-400 transition">Случайный</a>
+        </nav>
+        <button class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold hover:bg-yellow-500">Загрузить</button>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="meme-grid">
+            
+            <div class="meme-card bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-700">
+                <img src="https://via.placeholder.com/500x500?text=Meme+1" alt="Meme" class="w-full">
+                <div class="p-4 flex justify-between items-center">
+                    <span class="text-sm text-zinc-400">Добавлено 2ч назад</span>
+                    <div class="flex space-x-3">
+                        <button class="hover:text-red-500">❤️ 124</button>
+                        <button class="hover:text-blue-400">💬 12</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meme-card bg-zinc-800 rounded-2xl overflow-hidden border border-zinc-700">
+                <img src="https://via.placeholder.com/500x600?text=Meme+2" alt="Meme" class="w-full">
+                <div class="p-4 flex justify-between items-center">
+                    <span class="text-sm text-zinc-400">В тренде</span>
+                    <div class="flex space-x-3">
+                        <button class="hover:text-red-500">❤️ 892</button>
+                        <button class="hover:text-blue-400">💬 45</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="text-center p-10 text-zinc-500 border-t border-zinc-800 mt-10">
+        <p>© 2026 Мемотека. Создано для хорошего настроения.</p>
+    </footer>
+
+</body>
+</html>
